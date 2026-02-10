@@ -52,7 +52,7 @@
     justify-content: center;
     text-shadow: 0 0 5px lightgreen;
     font-size: 3em;
-    font-family: 'Press Start 2P'
+    font-family: 'Press Start 2P';
 }
 #hr{
     height: 2.5px;
@@ -76,7 +76,7 @@
     justify-content: center;
     color: green;
     text-shadow: 0 0 5px lightgreen;
-    font-family: 'Press Start 2P'
+    font-family: 'Press Start 2P';
 
 }
 body{
