@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft Style</title>
+    <title>Realm</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="top wrap">
-    <img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg"><img src="TopDeco.jpg">
-    <button class="updateButton" onclick="updateButtonClicked()">Update</button>
-    <button class="welcomeButton" onclick="welcomeButtonClicked()">Welcome Page</button>
-    </div>
-    <h1 id="title">Was heute passiert ist</h1>
+    <h1 id="title">Willkommen zurück!</h1>
     <hr id="hr">
+    <div id="box">
+        <img src="discordLogo.gif" id="discordlogo">
+    </div>
+    <button id="nextPage" onclick="nextPage()"></button>
+    <h1 id="updatetitle">Updates</h1>
+    <h2 id="update">Ihr habt mir keine Updates gegeben</h2>
     <hr id="hr1">
-    <p id="update">Heute wurde eine Creeper Farm gebaut</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1 id="membertitle">Members</h1>
+    <hr id="hr2">
+    <pre id="members">Unsere Members sind:
+            Frederic
+             Yannic
+             Caspar
+             Tilman
+             Matteo
+
+    </pre>
+    <button id="previousPage" onclick="previousPage()"></button>
     <script src="script.js"></script>
+    
 </body>
 </html>
