@@ -1,85 +1,148 @@
-.top{
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 0;
-}
-.updateButton{
-    width: 100px;
-    height: 50px;
-    position: absolute;
-    top: 6%;
-    left: 95%;
-    transform: translate(-50%, -50%);
-    background-color: lightgreen;
-    border: 5px solid green;
-    color: green;
-    font-weight: bold;
-    font-family: 'Press Start 2P', monospace;
-    font-size: 0.5em;
-    transition: all 0.5s ease;
-}
-.updateButton:hover{
-    background-color: white;
-    cursor: pointer;
-}
-.welcomeButton{
-    width: 100px;
-    height: 50px;
-    position: absolute;
-    top: 6%;
-    left: 89%;
-    transform: translate(-50%, -50%);
-    background-color: lightgreen;
-    border: 5px solid green;
-    color: green;
-    font-weight: bold;
-    font-family: 'Press Start 2P', monospace;
-    font-size: 0.5em;
-    transition: all 0.5s ease;
-}
-.welcomeButton:hover{
-    background-color: white;
-    cursor: pointer;}
-
-.top img{
-    display: block;
-    width: 100px;
-    height: auto;
-    flex-shrink: 0;
+body{
+    overflow: hidden;
+    background: linear-gradient(90deg, red, blue);
 }
 #title{
-    display: flex;
-    justify-content: center;
-    text-shadow: 0 0 5px lightgreen;
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    font-family: "Arial Black";
     font-size: 3em;
-    font-family: 'Press Start 2P';
+    color: white;
+    text-shadow: 0 0 5px white;
+    transition: all 1s ease;
 }
 #hr{
+    position: absolute;
+    left: 0%;
+    top: 20%;
+    opacity: 0;
+    width: 100%;
     height: 2.5px;
-    color: lightgreen;
-    background-color: green;
-    box-shadow: 0 0 10px lightgreen;
+    background-color: white;
+    box-shadow: 0 0 10px white;
+    transition: all 1s ease;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(90deg, red, blue);
+    border-radius: 20px;
+    transition: all 1s ease;
+}
+#discordlogo{
+    width: 300px;
+    height: auto;
+    border-radius: 50px;
+}
+#nextPage{
+    position: absolute;
+    top: 88%;
+    left: 94%;
+    width: 50px;
+    height: 50px;
+    transition: all 1s ease;
+    background: linear-gradient(45deg, blue, red);
+}
+#nextPage:hover{
+    top: 87%;
+    left: 93%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+#updatetitle{
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    font-family: "Arial Black";
+    text-shadow: 0 0 5px white;
+    transition: all 1s ease;
+}
+#update{
+    position: absolute;
+    color: white;
+    text-shadow: 0 0 5px white;
+    opacity: 0;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s ease;
 }
 #hr1{
     position: absolute;
+    top: 200px;
+    left: 0%;
+    opacity: 0;
+    background-color: white;
+    width: 100%;
+    height: 5px;
+    box-shadow: 0 0 10px white;
+    transition: all 1s ease;
+}
+#membertitle{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    font-family: "Arial Black";
+    text-shadow: 0 0 10px white;
+    transition: all 1s ease;
+}
+#hr2{
+    position: absolute;
+    top: 300px;
+    left: 0%;
+    opacity: 0;
+    background-color: white;
+    width: 100%;
     height: 2.5px;
-    width: 99%;
-    color: lightgreen;
-    background-color: green;
-    box-shadow: 0 0 10px lightgreen;
-    top: 10.3%;
-    left: 0.4%;
+    box-shadow: 0 0 10px white;
+    transition: all 1s ease;
 }
-
-#update{
-    display: flex;
-    justify-content: center;
-    color: green;
-    text-shadow: 0 0 5px lightgreen;
-    font-family: 'Press Start 2P';
-
+#members{
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 5px white;
+    color: white;
+    font-size: 2em;
+    font-family: "Arial Black";
+    transition: all 1s ease;
 }
-body{
-    background-color: aliceblue;
-    box-shadow: 0 0 20px green;
+#previousPage{
+    position: absolute;
+    top: 100%;
+    left: 2%;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    transition: all 1s ease;
+    background: linear-gradient(45deg, blue, red);
+}
+#previousPage:hover{
+    top: 87%;
+    left: 1%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
 }
